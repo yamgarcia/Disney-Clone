@@ -41,11 +41,18 @@ a {
 
 .main-video img {
   width: 100%;
-  
 }
 
 .video-feed img {
   height: 30vh;
   width: auto;
   max-width: 200px;
+}
+
+.navbar {
+  height: 6vh;
+  width: 10vh;
+  display: flex;
+  cursor: pointer;
+  margin: 10px;
 }
