@@ -41,13 +41,17 @@ export const getServerSideProps = async (pageContext) => {
       video,
     },
   };
-
-  console.log(pageSlug);
 };
 
 const Video = ({ video }) => {
   console.log(video);
-  return <></>;
+  return (
+    <>
+      <div className='main-video'>
+        <img className='banner' src={video.thumbnail.url} alt={video.title} />
+      </div>
+    </>
+  );
 };
 
 export default Video;
