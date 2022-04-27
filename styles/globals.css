@@ -56,3 +56,25 @@ a {
   cursor: pointer;
   margin: 10px;
 }
+
+.video-image {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.info {
+  position: relative;
+  margin-top: 30%;
+  margin-left: 50px;
+  max-width: 50%;
+}
+
+.video-overlay {
+  position: absolute;
+}
+
+.info-footer {
+  height: 100vh;
+  
+}
