@@ -17,14 +17,14 @@ a {
   position: relative;
   left: 50%;
   height: 30vh;
-  width: 100vw;
+  /* width: 100vw; */
   overflow: hidden;
   margin-bottom: 50px;
   transform: translate(-50%, -0%);
 }
 
 .banner {
-  width: 100vw;
+  width: 97vw;
 }
 
 .app {
@@ -39,9 +39,6 @@ a {
   filter: drop-shadow(5px 5px 10px #000);
 }
 
-.main-video img {
-  width: 100%;
-}
 
 .video-feed img {
   height: 30vh;
@@ -50,11 +47,18 @@ a {
 }
 
 .navbar {
-  height: 6vh;
-  width: 10vh;
   display: flex;
+  height: 80px;
+  width: auto;
   cursor: pointer;
   margin: 10px;
+  justify-content: space-between;
+}
+
+.disney-logo {
+  display: flex;
+  height: 7vh;
+  width: 13vh;
 }
 
 .video-image {
@@ -76,5 +80,18 @@ a {
 
 .info-footer {
   height: 100vh;
-  
+}
+
+.account-info {
+  display: flex;
+  height: 50%;
+}
+.account-info p {
+  width: 20vw;
+}
+
+.avatar {
+  height: 7vh;
+  width: auto;
+  border-radius: 50%;
 }

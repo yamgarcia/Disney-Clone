@@ -5,6 +5,7 @@ import NavBar from "../components/NavBar"
 export const getStaticProps = async () => {
   const url = process.env.ENDPOINT;
 
+  //! old GraphQLClient object initialization
   // const graphQLClient = new GraphQLClient(url, {
   //   headers: {
   //     "Authorization": process.env.GRAPH_CMS_TOKEN
@@ -12,10 +13,9 @@ export const getStaticProps = async () => {
   // })
 
   const client = new GraphQLClient(url);
-
   client.setHeader("authorization", process.env.GRAPH_CMS_TOKEN);
 
-  const query = gql`
+  const videosQuery = gql`
     {
       videos {
         createdAt
@@ -45,19 +45,21 @@ export const getStaticProps = async () => {
     }
   }
   `
-
-  const data = await client.request(query);
-
-  const videos = data.videos;
+  const videosData = await client.request(videosQuery);
+  const accountData = await client.request(accountQuery);
+  
+  const videos = videosData.videos;
+  const account = accountData.account;
 
   return {
     props: {
       videos,
+      account
     },
   };
 };
 
-const Home = ({ videos }) => {
+const Home = ({ videos, account }) => {
   const randomVideo = (videos) => {
     return videos[Math.floor(Math.random() * videos.length)];
   };
@@ -72,7 +74,7 @@ const Home = ({ videos }) => {
 
   return (
     <>
-    <NavBar/>
+    <NavBar account={account} />
       <div className='app'>
         <div className='main-video'>
           <img
