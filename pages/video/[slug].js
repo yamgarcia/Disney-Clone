@@ -13,7 +13,7 @@ export const getServerSideProps = async (pageContext) => {
 
   const pageSlug = pageContext.query.slug;
 
-  const query = gql`
+  const videosQuery = gql`
     query ($pageSlug: String!) {
       video(where: { slug: $pageSlug }) {
         createdAt
@@ -37,7 +37,7 @@ export const getServerSideProps = async (pageContext) => {
     pageSlug,
   };
 
-  const data = await client.request(query, variables);
+  const data = await client.request(videosQuery, variables);
   const video = data.video;
 
   return {

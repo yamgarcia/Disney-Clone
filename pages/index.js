@@ -35,6 +35,17 @@ export const getStaticProps = async () => {
     }
   `;
 
+  const accountQuery = gql `
+  query {
+    account (where: {id:"cl22us6jvosan0bmu7zx888t2"}) {
+      username
+      avatar {
+        url
+      }      
+    }
+  }
+  `
+
   const data = await client.request(query);
 
   const videos = data.videos;
