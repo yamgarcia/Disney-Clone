@@ -1,6 +1,6 @@
 import { gql, GraphQLClient } from "graphql-request";
 import Section from "../components/Section";
-import NavBar from "../components/NavBar"
+import NavBar from "../components/NavBar";
 
 export const getStaticProps = async () => {
   const url = process.env.ENDPOINT;
@@ -35,26 +35,26 @@ export const getStaticProps = async () => {
     }
   `;
 
-  const accountQuery = gql `
-  query {
-    account (where: {id:"cl22us6jvosan0bmu7zx888t2"}) {
-      username
-      avatar {
-        url
-      }      
+  const accountQuery = gql`
+    query {
+      account(where: { id: "cl22us6jvosan0bmu7zx888t2" }) {
+        username
+        avatar {
+          url
+        }
+      }
     }
-  }
-  `
+  `;
   const videosData = await client.request(videosQuery);
   const accountData = await client.request(accountQuery);
-  
+
   const videos = videosData.videos;
   const account = accountData.account;
 
   return {
     props: {
       videos,
-      account
+      account,
     },
   };
 };
@@ -69,12 +69,14 @@ const Home = ({ videos, account }) => {
   };
 
   const unSeenVideos = (videos) => {
-    return videos.filter(video => video.seen === null);;
+    return videos.filter(
+      (video) => video.seen === null || video.seen === false
+    );
   };
 
   return (
     <>
-    <NavBar account={account} />
+      <NavBar account={account} />
       <div className='app'>
         <div className='main-video'>
           <img
