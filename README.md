@@ -1,33 +1,37 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h4 align="center">
+<a href="https://marcos-portfolio.herokuapp.com/" ><img src="./public/images/disney-clone.png" width="500px" /><br></a>
+ <b>Marcos' Portfolio</b> 🦸‍♂️
+</h4>
+<p align="center">
+  <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
+</p>
 
-## Getting Started
+<br>
 
-First, run the development server:
+### :rocket: Used Technologies
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+The following project was made
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [Next.js](https://nextjs.org/)
+- [GraphQL](https://graphql.org/)
+- [GraphCMS](https://graphcms.com/)
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### :muscle: Project
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Small project that shows the use of common GraphQL concepts and API buiding.
+Clone this GraphQL API by using this URL: https://app.graphcms.com/clone/56e56cfcc0a24094b89feab5cee9d083?name=Disney%20Clone
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
+- Fork this repository;
+- Create a branch with your feature: `git checkout -b my-feature`
+- Commit your changes: `git commit -m 'feat: My new feature'`
+- Push your branch: `git push origin my-feature`
 
-To learn more about Next.js, take a look at the following resources:
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### :memo: License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+This project is under the MIT License. See the file [LICENSE](LICENSE.md) for more details.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+<p align="center">Made with love ❤️ by <b><a src="https://github.com/yamgarcia">Marcos Garcia</a></b></p>
