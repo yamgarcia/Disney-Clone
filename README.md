@@ -1,5 +1,5 @@
 <h4 align="center">
-<img src="./public/images/disney-clone.png" width="500px" /><br>
+<img src="https://github.com/yamgarcia/Disney-Clone/blob/main/public/disney-clone.png?raw=true" width="500px" /><br>
  <b>Marcos' Portfolio</b> 🦸‍♂️
 </h4>
 <p align="center">
