@@ -19,6 +19,10 @@ The following project was made
 ### :muscle: Project
 
 Small project that shows the use of common GraphQL concepts and API buiding.
+
+The project consists of a Home Page with the titles and a page for each show. 
+By clicking the titles users can watch the trailer and that updates the API and the user won't be recommended that show on the home page.
+
 Clone this GraphQL API by using this URL: https://app.graphcms.com/clone/56e56cfcc0a24094b89feab5cee9d083?name=Disney%20Clone
 
 ---
