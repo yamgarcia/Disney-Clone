@@ -1,6 +1,6 @@
 <h4 align="center">
 <img src="https://github.com/yamgarcia/Disney-Clone/blob/main/public/disney-clone.png?raw=true" width="500px" /><br>
- <b>Marcos' Portfolio</b> 🦸‍♂️
+ 
 </h4>
 <p align="center">
   <img alt="License" src="https://img.shields.io/badge/license-MIT-red">
